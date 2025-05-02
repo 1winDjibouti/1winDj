@@ -1,0 +1,65 @@
+button {
+    border: none;
+    background-color: rgb(54, 14, 54);
+    box-shadow: 3px 3px 100px rgb(3, 3, 3);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+@font-face {
+    font-family: font;
+    src: url(./CalSans-Regular.ttf);
+}
+
+p {
+    color: white;
+    font-family: font;
+}
+
+input {
+    text-align: center;
+    color: rgb(58, 38, 77);
+    border: none;
+    font-family: font;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.menu {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 100px rgb(3, 3, 3);
+}
+
+@keyframes bell {
+    20% {
+        transform: rotate(40deg);
+    }
+    40% {
+        transform: rotate(-40deg);
+    }
+    60% {
+        transform: rotate(40deg);
+    }
+    80% {
+        transform: rotate(-40deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+dialog::backdrop {
+    opacity: 100;
+}
+
+.bell {
+    position: absolute;
+    animation: bell 1s infinite;
+    top: 710px;
+    left: 300px;
+}
